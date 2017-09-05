@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<!--Stick Post Header with Title & Share Links-->
+<div class="dn db-ns">{% include stickyHeader.html %}</div>
+
+<!--Standard Post Template-->
+<article class="mv3" itemscope itemtype="http://schema.org/BlogPosting" id="post">
+
+  <div class="f4 fw3">
+    <div>
+      <!--Headline-->
+      <h1 class="manege f-subheadline-ns f1 fw1 lh-solid mb5" itemprop="name headline">{{ page.title }}</h1>
+
+      {% include storyMeta.html %}
+
+    </div>
+
+    <!--Story Body-->
+    <div>
+      <div class="georgia f4 lh-copy fw1 w-two-thirds-ns" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+</article>
+<div class="cf"></div>

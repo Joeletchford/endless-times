@@ -1,0 +1,13 @@
+---
+layout: default
+title: Home
+---
+<div class="tracked-med fw4 f5 lh-copy mv6">
+  <!-- <div class="w-third fl pr4">Welcome to the Endless Times Beta Platform Ultimate Build V1. There isn't anything here yet. You can see the various story page layouts by choosing from the list on the right. Click around the footer area to see the page layouts.</div> -->
+  <div class="">
+    {% for post in site.posts %}
+        <h3 class="fw4 f5 mb0 mt0"><a class="link black dim bb" href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="mt0">Layout: <span class="ttc">{{ post.layout }}</span></p>
+    {% endfor %}
+  </div>
+</div>

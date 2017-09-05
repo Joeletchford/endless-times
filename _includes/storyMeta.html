@@ -1,0 +1,15 @@
+<!--Story Metadata-->
+<p class="f5 fw4 tracked-med helvetica">
+  <!--Slug-->
+  <a class="dim ttc" href="">{{ page.tags }}</a> &middot;
+  <!--Byline-->
+  Words by <a class="link black dim bb" href="">{{ page.byline }}</a> &middot;
+  <!--Date Published-->
+  <a class="link black dim bb" href="#">
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {{ page.date | date: "%b %-d, %Y" }}
+    </time>
+  </a>
+  <!--Estimated Read Time / This might be cool once we know how long articles are going to be-->
+  <!-- {% include readTime.html %} -->
+</p>

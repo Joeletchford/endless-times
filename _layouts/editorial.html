@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="helvetica" id="post">
+
+    <div class="dn db-ns">{% include stickyHeader.html %}</div>
+
+    <div class="vh-100 cover pa4 pb0" style="background: url({{ site.baseurl }}/images/{{ page.image }})">
+      <div id="editorial-header" class="">{% include header.html %}</div>
+      <div class="absolute bottom-0 white lh-solid w-50-ns pr4 pr0-ns">
+        <h1 class="manege f-subheadline-ns f1 fw1 mb0" itemprop="name headline">{{ page.title }}</h1>
+        <p class="pb3 lh-copy">{{ page.teaser }}</p>
+      </div>
+    </div>
+
+    <div class="pa4 mt5-ns">
+      <div class="georgia f4 lh-copy fw1 w-two-thirds-ns">
+        {% include storyMeta.html %}
+
+        {{ content }}
+      </div>
+    </div>
+
+    <div class="pa4">{% include footer.html %}</div>
+
+  </body>
+
+</html>
